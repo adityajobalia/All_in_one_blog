@@ -7,8 +7,9 @@ const articleRouter = require("./routes/article");
 const mongoose = require("mongoose");
 const articleSchema = require("./models/article");
 
+const url = ''
 mongoose.connect(
-  "mongodb+srv://aditya4500:Aditya@9090@learning-node.5bjrb.mongodb.net/blog?retryWrites=true&w=majority",
+  url,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true },
   (err) => {
     console.log("Database connected-----", err);
